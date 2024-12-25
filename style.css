@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e4b957;
+}
+.container{
+    background-color: rgb(103, 154, 48);
+    border-radius: 10px;
+    padding: 10px;
+    width: 280px;
+    min-height: 60vh;
+   
+    
+}
+
+button{
+  margin-top: 50px;
+  width: 180px;
+ align-self: center;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e69214;
+  font-size: 1rem;
+}
+form input{
+    margin-bottom: 10px ;
+    margin-top: 5px;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+  
+  
+}
+.drop_down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.select_container{
+    display: flex;
+    /* flex-direction: column; */
+   border: 1px solid lightgrey;
+   background-color: rgb(67, 110, 29);
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 8px;
+}
+.select_container img{
+    max-width: 2.4rem;
+}
+#to_currency,#from_currency{
+    width: 3rem;
+}
+/* removed from html */
+.select_group {
+    display: flex;
+    align-items: center; /* Align the paragraph and flag vertically */
+    gap: 10px; /* Add a small gap between the "from/to" text and the flag */
+    flex-direction: column;
+    align-items: flex-start;
+}
+  select {
+    width: 120px; /* Adjust width */
+    height: 25px; /* Adjust height */
+    /* padding: 1px; Optional: Adjust inner spacing */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 12px; /* Adjust font size for readability */
+   /* background-color:  rgb(54, 110, 133); */
+}
+
+
+.drop_down i{
+    font-size: 1.6rem;
+    margin-top: 25px;
+}
+.select_container select{
+    font-size: 0.9rem;
+    width: auto;
+}
+.msg{
+    margin: 2rem 0 0 0;
+}

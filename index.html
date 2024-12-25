@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <form action="">
+        <h1>currency converter</h1>
+       <label for="amount">Enter Amount:</label>
+       <input type="text" id="amount" value="100">
+       <div class="drop_down">
+          <div class="select_group">
+            <p>from</p>
+            <div class="select_container">
+              
+                <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                <select id="from_currency">
+                    <option value="US">USD</option>
+                    <option value="IT">EUR</option>
+                    <option value="IN" selected>INR</option>
+                    <option value="GB">GBP</option>
+                </select>
+             
+        
+            </div>
+          </div>
+           <i class="fa-solid fa-arrow-right-arrow-left"></i>
+         <div class="select_group">
+            <p>to</p>
+            <div class="select_container">
+                <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                <select id="to_currency">
+                     <option value="US" selected>USD</option>
+                    <option value="IT">EUR</option>
+                    <option value="GB">GBP</option>
+                    <option value="IN" >INR</option>
+                </select>
+            </div>
+         </div>
+       </div>
+       <p class="msg">RESULT</p>
+       <button type="submit">Convert</button>
+       </form>
+       <script src="script.js"></script>       
+</div>
+</body>
+</html>
