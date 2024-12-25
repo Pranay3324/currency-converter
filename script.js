@@ -3,8 +3,8 @@ const dropdownOptions = document.querySelectorAll(".drop_down select");
 const btn = document.querySelector("form button");
 const msg = document.querySelector(".msg");
 
-let from = ""; // Default 'from' currency code (lowercase for API)
-let to = "";   // Default 'to' currency code (lowercase for API)
+let from = null; // Default 'from' currency code (lowercase for API)
+let to = null;   // Default 'to' currency code (lowercase for API)
 
 // Event listeners for dropdowns to update selected currencies and flags
 for (let select of dropdownOptions) {
@@ -67,6 +67,9 @@ async function updateVal(from, to,amtValue) {
     } catch (error) {
         console.error("Error fetching data:", error);
         msg.innerText = "Error fetching conversion data. Please try again.";
+    }
+    finally {
+        btn.disabled = false; // Re-enable button after fetching data,if error occurs without this block button remains disabled,with this it will be re enabled when error occurs and we can click it agin
     }
 }
 }
