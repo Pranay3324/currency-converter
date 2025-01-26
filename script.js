@@ -3,8 +3,8 @@ const dropdownOptions = document.querySelectorAll(".drop_down select");
 const btn = document.querySelector("form button");
 const msg = document.querySelector(".msg");
 
-let from = null; // Default 'from' currency code (lowercase for API)
-let to = null;   // Default 'to' currency code (lowercase for API)
+let from = "inr"; // Default 'from' currency code (lowercase for API)
+let to = "usd";   // Default 'to' currency code (lowercase for API)
 
 // Event listeners for dropdowns to update selected currencies and flags
 for (let select of dropdownOptions) {
@@ -86,6 +86,8 @@ btn.addEventListener("click", (e) => {
     }
 
     console.log("Amount to convert:", amtValue);
+    console.log("From:", from, "To:", to);
+    
 
     updateVal(from, to,amtValue); // Trigger conversion update
 });
